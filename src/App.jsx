@@ -1,14 +1,10 @@
-import { useState } from 'react'
-import Login from './features/identity/components/login'
+import { RouterProvider } from 'react-router-dom'
+import router from './router'
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <Login />
-    </>
+    <RouterProvider router={router} />
   )
 }
 
