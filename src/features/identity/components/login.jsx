@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 const Login = () => {
     return (
         <>
-
-            <div className="text-center mt-40">
+            <div className="text-center mt-4">
                 <img src={logo} style={{ height: "100px" }} />
                 <h1 className="h2">پلتفرم آموزش آنلاین</h1>
                 <p className="lead">
