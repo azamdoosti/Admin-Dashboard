@@ -1,5 +1,13 @@
 {
     "register": {
-        "register": "Register"
+        "register": "Register",
+        "title": "Online Education Platform",
+        "password": "Password",
+        "repeatPassword": "Repeat Password",
+        "mobile": "Mobile",
+        "validaiton": {
+            "mobileRequired": "Mobile is required",
+            "passwordRequired": "Password is required"
+        }
     }
 }

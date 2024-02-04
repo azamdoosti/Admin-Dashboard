@@ -1,5 +1,14 @@
 {
     "register": {
-        "register": "ثبت نام"
+        "title": "پلتفرم آنلاین آموزش",
+        "IntoMessage": "جهت استفاده از ویژگی های پلتفرم ثبت نام کنید",
+        "mobile": "موبایل",
+        "register": "ثبت نام",
+        "password": "رمز عبور",
+        "repeatPassword": "تکرار رمز عبور",
+        "validaiton": {
+            "mobileRequired": "موبایل الزامی است",
+            "passwordRequired": "رمز عبور الزامی است"
+        }
     }
 }

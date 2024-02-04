@@ -36,13 +36,14 @@ const Register = () => {
     const routeErrors = useRouteError()
 
     const { t } = useTranslation()
+
     return (
         <>
             <div className="text-center mt-40">
                 <img src={logo} style={{ height: "100px" }} />
-                <h1 className="h2">پلتفرم آموزش آنلاین</h1>
+                <h1 className="h2">{t('register.title')}</h1>
                 <p className="lead">
-                    جهت استفاده از ویژگی های پلتفرم کلاسبن ثبت نام کنید
+                    {t('register.IntoMessage')}
                 </p>
                 <p className="lead">
                     قبلا ثبت نام کرده اید؟
@@ -128,7 +129,7 @@ const Register = () => {
                                 <div className="text-center mt-3">
                                     <button type="submit" disabled={isSubmitting} className="btn btn-lg btn-primary">
                                         {console.log('Translated text:', t('register.register'))}
-                                        {t("register.register")}
+                                        {t('register.register')}
                                         {/* {isSubmitting ? 'در حال انجام عملیات' : 'ثبت نام کنید'} */}
                                     </button>
                                 </div>
