@@ -56,7 +56,7 @@ const Register = () => {
                     <div className="m-sm-4">
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <div className="mb-3">
-                                <label className="form-label">موبایل</label>
+                                <label className="form-label">{t('register.mobile')}</label>
                                 <input {...register("mobile", {
                                     required: 'موبایل الزامی است',
                                     minLength: 11,
