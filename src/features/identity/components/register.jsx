@@ -2,6 +2,7 @@ import logo from "@assets/images/logo.svg";
 import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
+import httpService from '@core/http-service'
 import { Link, useActionData, useNavigate, useNavigation, useSubmit, useRouteError } from "react-router-dom";
 
 
@@ -41,7 +42,7 @@ const Register = () => {
         <>
             <div className="text-center mt-40">
                 <img src={logo} style={{ height: "100px" }} />
-                <h1 className="h2">{t('register.title')}</h1>
+                <h1 className="h2">پلتفرم آنلاین</h1>
                 <p className="lead">
                     {t('register.IntoMessage')}
                 </p>
@@ -144,7 +145,11 @@ const Register = () => {
                                 routeErrors && (
                                     <div className="alert alert-danger tetx-danger p-2 mt-3 ">
                                         {
-                                            routeErrors.response?.data.map(error => <p className="mb-0">{error.decsription}</p>)
+                                            routeErrors.response?.data.map(error =>
+                                                <p className="mb-0">{error.decsription}
+                                                    {/* {t(`register.validation.${error.code}`)} */}
+                                                </p>
+                                            )
                                         }
                                     </div>
                                 )

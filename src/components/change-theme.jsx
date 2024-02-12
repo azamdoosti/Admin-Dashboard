@@ -1,7 +1,8 @@
 import { useAppContext } from "../context/app/app-context"
 
 const ChangeTheme = () => {
-    const { theme, changeTheme } = useAppContext
+    const { theme, language, changeTheme } = useAppContext()
+    console.log("Context values:", theme, language);
     const changeThemeHandler = () => {
         changeTheme(theme === 'light' ? 'dark' : 'light')
     }

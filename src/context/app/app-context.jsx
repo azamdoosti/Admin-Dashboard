@@ -11,12 +11,11 @@ const initialState = {
 const AppProvider = ({ children }) => {
     const [state, dispatch] = useReducer(appReducer, initialState)
     const { i18n } = useTranslation()
-
     const changeLanguage = (language) => {
         dispatch({ type: 'CHANGE_LANGUAGE', payload: language })
     }
 
-    const changeTheme = () => {
+    const changeTheme = (theme) => {
         dispatch({ type: 'CHANGE_THEME', payload: theme })
     }
 
