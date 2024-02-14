@@ -2,7 +2,7 @@ import logo from "@assets/images/logo.svg";
 import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
-import httpService from '@core/http-service'
+import { httpService } from "@core/http-service";
 import { Link, useActionData, useNavigate, useNavigation, useSubmit, useRouteError } from "react-router-dom";
 
 

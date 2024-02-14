@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Link, redirect, useRouteError } from "react-router-dom";
 import { useForm } from 'react-hook-form'
 import { useSubmit, useNavigation } from "react-router-dom";
-import httpService from '@core/http-service'
+import { httpService } from "@core/http-service";
 
 
 const Login = () => {
@@ -16,7 +16,7 @@ const Login = () => {
 
     const submitForm = useSubmit();
     const onSubmit = data =>
-        submitForm(data, { method: post })
+        submitForm(data, { method: 'post' })
 
     const navigation = useNavigation()
     const issubmitting = navigation.state !== 'idle'
